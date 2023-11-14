@@ -1,0 +1,51 @@
+body {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+
+.calculator {
+    height: 600px;
+    width: 400px;
+    border: 10px;
+    padding: 13px;
+    background-color: blue;
+}
+
+.firstBox {
+    width: 393px;
+    height: 85px;
+    border: 4px solid black;
+    background-color: grey;
+    font-size: 30px;
+}
+
+.secondBox {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin: 10px 0px;
+}
+
+.last-buttons-container {
+    height: 70px;
+    display: flex;
+    gap: 4px;
+}
+
+.zero, .dot, .equal {
+    height: 70px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.zero {
+    flex-grow: 2;
+}
+.dot {
+    flex-grow: 1;
+}
+.equal{
+    flex-grow: 1;
+}

@@ -25,16 +25,17 @@ function operate (firstnum, operator, secondnum ) {
 //console.log(operate(79, "-", 5));
 
 const calculator = document.querySelector(".calculator");
-const container = document.querySelector(".last-buttons-container");
-const secondbox = document.querySelector(".secondBox")
+const secondbox = document.querySelector(".secondBox");
 
-
-for (let i = 0; i < 16; i++) {
+for (let i = 0; i < 20; i++) {
     const mainbox = document.createElement("button");
-    mainbox.setAttribute("id", "buttons-mainbox");
-    let mainboxInput = ["AC", "+/-", "%", "/", 7, 8, 9, "*", 4, 5, 6, "-", 1, 2, 3, "+"];
+    mainbox.setAttribute("id", "buttons-second-box");
+    let mainboxInput = ["AC", "^", "+/-", "/", 7, 8, 9, "*", 4, 5, 6, "-", 1, 2, 3, "+", 0, ".", "%", "="];
     mainbox.textContent = mainboxInput[i];
     mainbox.style.cssText = "width: 97px; height: 85px; font-size: 40px; font-weight: 700;";
+    mainbox.addEventListener('click', () => {
+        console.log('working');
+    })
     secondbox.appendChild(mainbox);
 }
 

@@ -5,7 +5,7 @@ body {
 }
 
 .calculator {
-    height: 600px;
+    height: 540px;
     width: 400px;
     border: 10px;
     padding: 13px;
@@ -28,24 +28,7 @@ body {
     margin: 10px 0px;
 }
 
-.last-buttons-container {
-    height: 70px;
-    display: flex;
-    gap: 4px;
-}
 
-.zero, .dot, .equal {
-    height: 70px;
-    font-size: 40px;
-    font-weight: 700;
-}
 
-.zero {
-    flex-grow: 2;
-}
-.dot {
-    flex-grow: 1;
-}
-.equal{
-    flex-grow: 1;
-}
+
+

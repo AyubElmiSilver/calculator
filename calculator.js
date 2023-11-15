@@ -25,8 +25,9 @@ function operate (firstnum, operator, secondnum ) {
 //console.log(operate(79, "-", 5));
 
 const calculator = document.querySelector(".calculator");
+const firstbox = document.querySelector(".firstBox");
 const secondbox = document.querySelector(".secondBox");
-
+let display;
 for (let i = 0; i < 20; i++) {
     const mainbox = document.createElement("button");
     mainbox.setAttribute("id", "buttons-second-box");
@@ -34,7 +35,10 @@ for (let i = 0; i < 20; i++) {
     mainbox.textContent = mainboxInput[i];
     mainbox.style.cssText = "width: 97px; height: 85px; font-size: 40px; font-weight: 700;";
     mainbox.addEventListener('click', () => {
-        console.log('working');
+         display = mainboxInput[i];
+         if (typeof display == 'number') {
+            firstbox.textContent = display;
+        };
     })
     secondbox.appendChild(mainbox);
 }

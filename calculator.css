@@ -28,6 +28,9 @@ body {
     margin: 10px 0px;
 }
 
+button:active {
+    background-color: lightskyblue;
+}
 
 
 
